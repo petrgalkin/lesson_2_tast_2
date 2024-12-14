@@ -41,7 +41,7 @@ export const App = () => {
 				<div className={styles.steps}>
 					<div className={styles["steps-content"]}>
 						{/* Для получения активного контента использйте steps и activeIndex */}
-						<h2>{steps[activeIndex].title}</h2>
+
 						{steps[activeIndex].content}
 						{/* Контент соответственный шагу. Сейчас активен шаг 3 */}
 					</div>
@@ -70,7 +70,7 @@ export const App = () => {
 									{index + 1}
 								</button>
 								{/* При клике на кнопку установка выбранного шага в качестве активного */}
-								Шаг {index + 1}
+								{steps[index].title}
 							</li>
 						))}
 					</ul>
