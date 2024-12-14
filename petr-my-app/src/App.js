@@ -5,7 +5,7 @@ import { useState } from "react";
 export const App = () => {
 	// Можно задать 2 состояния — steps и activeIndex
 
-	const [steps, setSteps] = useState(data);
+	const [steps] = useState(data);
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	// И определить 3 обработчика: Клик назад, Клик вперед, Начать сначала
